@@ -14,9 +14,9 @@ This is an opinionated react-native stack with Typescript, Expo Router and Tailw
 - [ ] Add MobX
 - [ ] Update README
 - [ ] Add comments
-- [*] Add Splash Screen
-- [*] Add Nativewind
-- [*] Add Expo Router
+- [x] Add Splash Screen
+- [x] Add Nativewind
+- [x] Add Expo Router
 
 ```sh
 npx create-react-native-app -t with-typescript
