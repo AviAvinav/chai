@@ -2,6 +2,17 @@ module.exports = function (api) {
   api.cache(true);
   return {
     presets: ["babel-preset-expo"],
-    plugins: ["nativewind/babel", require.resolve("expo-router/babel")],
+    plugins: [
+      "nativewind/babel",
+      require.resolve("expo-router/babel"),
+      {
+        alias: {
+          "@assets/*": ["./assets/*"],
+          "@components/*": ["./components/*"],
+          "@lib/*": ["./lib/*"],
+          "@app/*": ["./app/*"],
+        },
+      },
+    ],
   };
 };
