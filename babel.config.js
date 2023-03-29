@@ -5,14 +5,17 @@ module.exports = function (api) {
     plugins: [
       "nativewind/babel",
       require.resolve("expo-router/babel"),
-      {
-        alias: {
-          "@assets/*": ["./assets/*"],
-          "@components/*": ["./components/*"],
-          "@lib/*": ["./lib/*"],
-          "@app/*": ["./app/*"],
+      [
+        "module-resolver",
+        {
+          alias: {
+            "@assets": "./assets",
+            "@components": "./components",
+            "@lib": "./lib",
+            "@app": "./app",
+          },
         },
-      },
+      ],
     ],
   };
 };
