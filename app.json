@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "scheme": "myapp",
+
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
