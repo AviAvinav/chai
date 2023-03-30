@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const LoadingScreen = () => {
   return (
     <SafeAreaView className="flex-1 flex items-center justify-center">
-      <Text>Loading...</Text>
+      <Text className="text-xl">Loading...</Text>
     </SafeAreaView>
   );
 };

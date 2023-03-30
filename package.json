@@ -36,7 +36,5 @@
     "metro": "0.76.0",
     "metro-resolver": "0.76.0"
   },
-  "version": "1.0.0",
-  "private": true,
-  "name": "chai"
+  "version": "0.0.0"
 }

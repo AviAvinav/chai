@@ -21,20 +21,29 @@ const Clicks = () => {
 
   return (
     <SafeAreaView className="flex-1 flex items-center justify-center space-y-8">
-      <Text className="text-xl w-56">
+      <Text className="text-xl w-64 text-center">
         Hi, this is a page where you can update the number of clicks with
-        zustand page
+        zustand
       </Text>
       <View className="flex flex-row space-x-2 items-center justify-center">
-        <TouchableOpacity className="bg-blue-500 p-1" onPress={decrementClick}>
+        <TouchableOpacity
+          className="bg-violet-400 py-1 px-3"
+          onPress={decrementClick}
+        >
           <Text className="text-md">-</Text>
         </TouchableOpacity>
         <Text>{click}</Text>
-        <TouchableOpacity className="bg-blue-500 p-1" onPress={incrementClick}>
+        <TouchableOpacity
+          className="bg-violet-300 dark:bg-violet-500 p-1 px-3"
+          onPress={incrementClick}
+        >
           <Text className="text-md">+</Text>
         </TouchableOpacity>
       </View>
-      <Link className="text-center w-48 bg-violet-500 text-md p-2" href="/">
+      <Link
+        className="text-center w-48 bg-violet-300 dark:bg-violet-500 text-md p-2"
+        href="/"
+      >
         Go to Home Page
       </Link>
     </SafeAreaView>

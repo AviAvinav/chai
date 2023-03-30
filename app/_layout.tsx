@@ -13,9 +13,9 @@ const AppLayout = () => {
         // Pre-load fonts, make any API calls you need to do here
         // before your app loads up.
 
-        // Artificially delay for five seconds to simulate a slow loading
+        // Artificially delay for two seconds to simulate a slow loading
         // experience. Please remove this if you do not want any extra delay
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
       } catch (e) {
         console.warn(e);
       } finally {
