@@ -34,14 +34,14 @@ const Clicks = () => {
         </TouchableOpacity>
         <Text>{click}</Text>
         <TouchableOpacity
-          className="bg-violet-300 dark:bg-violet-500 p-1 px-3"
+          className="bg-violet-400 p-1 px-3"
           onPress={incrementClick}
         >
           <Text className="text-md">+</Text>
         </TouchableOpacity>
       </View>
       <Link
-        className="text-center w-48 bg-violet-300 dark:bg-violet-500 text-md p-2"
+        className="text-center w-48 bg-violet-400 text-md p-2"
         href="/"
       >
         Go to Home Page
