@@ -1,45 +1,54 @@
 # Chai Stack ☕
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-</p>
+This is an opinionated react-native stack with Typescript, Expo Router, Tailwind(Nativewind) & Zustand
 
-This is an opinionated react-native stack with Typescript, Expo Router and Tailwind(Nativewind)
-
-## Tasks
-
-- [ ] Add MobX
-- [ ] Update README
-- [ ] Add comments
-- [x] Add Splash Screen
-- [x] Add Nativewind
-- [x] Add Expo Router
+## 🚀 Quickstart
 
 ```sh
-npx create-react-native-app -t with-typescript
+npx degit aviavinav/chai my-project
+
+cd my-project && yarn install
+
+yarn start
 ```
 
-TypeScript is a superset of JavaScript which gives you static types and powerful tooling in Visual Studio Code including autocompletion and useful inline warnings for type errors.
+## 🛠️ Tools
 
-## 🚀 How to use
+- [Expo Router](https://github.com/expo/router): The File-based router for universal React Native apps.
 
-#### Creating a new project
+- [Typescript](https://www.typescriptlang.org/): TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
-- Install the CLI: `npm i -g expo-cli`
-- Create a project: `npx create-react-native-app -t with-typescript`
-- `cd` into the project
+- [Nativewind](https://www.nativewind.dev/): NativeWind uses [Tailwind CSS](https://tailwindcss.com/) as scripting language to create a universal style system for React Native.
 
-### Adding TypeScript to existing projects
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction): A small, fast, and scalable bearbones state management solution.
 
-- Create a blank TypeScript config: `touch tsconfig.json`
-- Run `yarn start` or `npm run start` to automatically configure TypeScript
-- Rename files to TypeScript, `.tsx` for React components and `.ts` for plain typescript files
+## 🪴 How to use
 
-> 💡 You can disable the TypeScript setup in Expo CLI with the environment variable `EXPO_NO_TYPESCRIPT_SETUP=1 expo start`
+### 📂 Folder Structure
 
-## 📝 Notes
+```
+├───app
+├───assets
+│   └───images
+├───components
+└───lib
+```
 
-- [Expo TypeScript guide](https://docs.expo.dev/versions/latest/guides/typescript/)
+### ❓ What & Where
+
+The `app` directory will contain your routes, for example, if I name a file `hello.tsx`, I can access it with the `Link` component like `<Link href="/hello">Go to Hello</Link>`, See [Expo Router docs](https://github.com/expo/router) for more.
+
+The `app/_layout.tsx` defines a layout for your screens, edit this if you want a constant header.
+
+You can edit the splash screen at `components/loadingscreen.tsx`. To change the time for which it is showed or make it wait for fonts to be loaded, edit `app/_layout.tsx`.
+
+### 🧭 Path Aliases
+
+The path aliases are as follows:
+
+- `@assets`: `./assets`
+- `@app`: `./app`
+- `@components`: `./components`
+- `@lib`: `./lib`
+
+If you edit them make sure to edit both `tsconfig.json` as well as `babel.config.js`, and run your app with `yarn start -c`.
