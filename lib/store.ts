@@ -5,8 +5,8 @@ type State = {
 };
 
 type Actions = {
-  incrementClick: (qty: number) => void;
-  decrementClick: (qty: number) => void;
+  incrementClick: () => void;
+  decrementClick: () => void;
 };
 
 export const useStore = create<State & Actions>((set) => ({
